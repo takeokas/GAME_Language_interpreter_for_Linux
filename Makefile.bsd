@@ -1,0 +1,38 @@
+#
+
+CFLAGS =  -DEMACS -DCOMPAT_43
+
+all: gi
+
+#
+#	GAME interpriter
+#
+OBJS =	ggii.o lined.o bsd.o
+SRCS =	ggii.c lined.c bsd.c
+#OBJS =	ggii.o  bsd.o
+#SRCS =	ggii.c  bsd.c
+
+gi: ${OBJS}
+	${CC} ${CFLAGS} -o gi ${OBJS}
+
+ggii.o:	ggii.c
+	${CC} ${CFLAGS} -c ggii.c
+
+#
+#	install
+#
+install:
+
+#
+#	make shar
+#
+shar:
+	shar	readme.j Makefile $(SRCS) > gi.shar
+
+
+#
+#	clean
+#
+clean:
+	rm -f *.o gi
+
