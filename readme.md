@@ -1,4 +1,4 @@
-#	G A M E_ I n t e r p r e t e r  たけおか32bit版  
+#	G A M E_ I n t e r p r e t e r  たけおか32bit版(in C under Linux)  
 
 ##  0.はじめに  
 
