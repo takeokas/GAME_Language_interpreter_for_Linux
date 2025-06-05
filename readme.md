@@ -1,4 +1,4 @@
-#	G A M E_ I n t e r p r e t e r  たけおか32bit版(in C under Linux)  
+#	GAME_Interpreter  たけおか32bit版(in C under Linux)  
 
 ##  0.はじめに  
 
@@ -15,6 +15,7 @@
 
   今回、GAMEインタープリタを C によって、実装しました。  
   GAME は 8bit, 16bit 操作しかなかったのですが、時代を鑑み、今回は 32bitを標準的な整数の大きさとし、16bit操作を拡張しました。  
+  UNIX, Linux以外に、PIC32, ARM Cortex-M3などでも動作しています。
 
 
 ##  2.主な拡張、変更点
